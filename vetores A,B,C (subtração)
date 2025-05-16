@@ -1,0 +1,27 @@
+package javaapplication136;
+
+import java.util.Scanner;
+
+
+public class JavaApplication136 {
+
+    
+    public static void main(String[] args) {
+        Scanner ler = new Scanner(System.in);
+          int[] va = new int[10];
+          int[] vb = new int[10];
+          int[] vc = new int[10];
+          int i;
+          for (i=0; i<va.length; i++){
+              System.out.println("digite "+(i+1)+" valor do vetor A");
+              va[i]=ler.nextInt();
+              System.out.println("digite "+(i+1)+" valor do vetor B");
+              vb[i]=ler.nextInt();
+          }
+          for (i=0; i<va.length; i++){
+              vc[i]= va[i]+vb[i];
+                System.out.println("A lista do vetor C (A + B) é " + vc[i]);
+          }
+    }
+    
+}
