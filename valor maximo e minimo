@@ -14,9 +14,9 @@ public class JavaApplication1 {
         int max = vetor[0];
         int min = vetor[0];
         //dados,processamento e saida//
-        System.out.println("insira 10 elementos: ");
+        System.out.println("insira 10 numeros: ");
         for (int i=0; i<vetor.length;i++){
-            System.out.println("elemento"+(i+1)+":");
+            System.out.println("numeros"+(i+1)+":");
             vetor[i]=ler.nextInt();
             
         }
