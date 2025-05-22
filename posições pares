@@ -1,0 +1,37 @@
+package javaapplication141;
+
+import java.util.Scanner;
+
+
+public class JavaApplication141 {
+
+    
+    public static void main(String[] args) {
+       Scanner ler=new Scanner(System.in);
+        int[] vetor = new int[10];
+        int soma = 0;
+        int contador = 0;
+
+        // Leitura dos elementos do vetor
+        System.out.println("Digite 10 números inteiros:");
+        for (int i = 0; i < vetor.length; i++) {
+            System.out.print("numeros " + i + ": ");
+            vetor[i] = ler.nextInt();
+
+            // Verifica se a posição é par (0, 2, 4, 6, 8)
+            if (i % 2 == 0) {
+                soma += vetor[i];
+                contador++;
+            }
+        }
+
+        // Cálculo da média
+        double media = (double) soma / contador;
+        System.out.println("A média dos valores nas posições pares é: " + media);
+
+     
+    }
+}
+    
+    
+
